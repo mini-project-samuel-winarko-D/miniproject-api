@@ -26,7 +26,7 @@ Feature: Category product at API AltaShop
     Then User verify response is match with json schema "getallcategories.json"
 
   @CategoryAltaShop @DeleteCategory @APIAltaShop
-  Scenario: User get all category
+  Scenario: User delete a category
     Given User call an api "categories/1" with method "DELETE"
     Then User verify response is match with json schema "deletecategories.json"
 
