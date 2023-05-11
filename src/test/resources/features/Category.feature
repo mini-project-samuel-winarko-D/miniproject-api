@@ -12,7 +12,7 @@ Feature: Category product at API AltaShop
 
   @CategoryAltaShop @GetCategoryByID @APIAltaShop
   Scenario: User get category by ID
-    Given User call an api "auth/login" with method "GET" with payload below
+    Given User call an api "auth/login" with method "POST" with payload below
       | email       | password
       | userEmail   | userPassword
     Then User verify code is 200
